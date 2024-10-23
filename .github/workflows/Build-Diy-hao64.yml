@@ -1,4 +1,4 @@
-name: Build hao_X86_64 IPv4 Version OpenWrt
+name: SSSS OpenWrt
 
 on:
   repository_dispatch:
