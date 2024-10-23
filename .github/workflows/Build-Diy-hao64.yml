@@ -1,4 +1,4 @@
-name: SSSS OpenWrt
+name: 123SSSS OpenWrt
 
 on:
   repository_dispatch:
