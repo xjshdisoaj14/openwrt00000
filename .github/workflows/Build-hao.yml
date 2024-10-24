@@ -1,4 +1,4 @@
-name: 123LLLL OpenWrt
+name: Build HAO OpenWrt
 
 on:
   repository_dispatch:
