@@ -1,4 +1,4 @@
-name: Build openWRT2
+name: Build OpenWRT2
 on:
   repository_dispatch:
   workflow_dispatch:
