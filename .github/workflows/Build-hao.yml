@@ -1,4 +1,4 @@
-name: Build OpenWRT2
+name: Build HAOHAO
 on:
   repository_dispatch:
   workflow_dispatch:
