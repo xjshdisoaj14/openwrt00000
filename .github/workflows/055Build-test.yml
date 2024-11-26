@@ -3,7 +3,7 @@ name: Build  OpenWrt TEST
 on:
   repository_dispatch:
   workflow_dispatch:
-   inputs:
+#  schedule:
      - cron: 1 2 3 1 * 
 
 env:
