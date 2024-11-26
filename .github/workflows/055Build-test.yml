@@ -3,8 +3,8 @@ name: Build  OpenWrt TEST
 on:
   repository_dispatch:
   workflow_dispatch:
-   schedule:
-     - cron: * * 3 1W * ? 
+   inputs:
+     - cron: 1 2 3 1 * 
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
