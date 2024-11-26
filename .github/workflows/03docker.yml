@@ -1,4 +1,4 @@
-name: Build DOCKER OpenWrt
+name: Build 3DOCKER OpenWrt
 
 on:
   repository_dispatch:
