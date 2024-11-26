@@ -1,4 +1,4 @@
-name: Build  OpenWrt HAO
+name: Build  OpenWrt TEST
 
 on:
   repository_dispatch:
