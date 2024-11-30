@@ -12,3 +12,4 @@ echo 'src-git opentopd  https://github.com/sirpdboy/sirpdboy-package' >>feeds.co
 sed -i '$a src-git openwrtpackages https://github.com/kenzok8/openwrt-packages.git' ./feeds.conf.default
 # homeproxy
 git clone --depth=1 https://github.com/immortalwrt/homeproxy.git package/homeproxy
+#echo 'src-git homeproxy https://github.com/immortalwrt/homeproxy' >> feeds.conf.default
