@@ -1,4 +1,4 @@
-name: …………TEST…………
+name: openwrt TEST
 
 on:
   repository_dispatch:
