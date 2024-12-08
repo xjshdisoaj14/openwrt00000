@@ -41,14 +41,14 @@ sed -i '$a src-git NueXini https://github.com/NueXini/NueXini_Packages' feeds.co
 # sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
 # sed -i '$a src-git OpenClash https://github.com/vernesong/OpenClash' feeds.conf.default
 # sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall.git' feeds.conf.default
-# sed -i '$a src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git' feeds.conf.default
+ sed -i '$a src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git' feeds.conf.default
 # sed -i '$a src-git vssr https://github.com/jerrykuku/luci-app-vssr' feeds.conf.default
 sed -i '$a src-git v2rayA https://github.com/v2rayA/v2raya-openwrt' feeds.conf.default
 #sed -i '$a src-git nekobox https://github.com/Thaolga/openwrt-nekobox' feeds.conf.default
 # DNS
 # sed -i '$a src-git smartdns https://github.com/pymumu/smartdns.git' feeds.conf.default
 # sed -i '$a src-git lucismartdns https://github.com/pymumu/luci-app-smartdns' feeds.conf.default
-# sed -i '$a src-git adguardhome https://github.com/kongfl888/luci-app-adguardhome' feeds.conf.default
+ sed -i '$a src-git adguardhome https://github.com/kongfl888/luci-app-adguardhome' feeds.conf.default
 # dockerman
 sed -i '$a src-git dockerman https://github.com/lisaac/luci-app-dockerman.git;master' feeds.conf.default
 #filebrowser
@@ -92,15 +92,8 @@ sed -i '$a src-git ikoolproxy https://github.com/ilxp/luci-app-ikoolproxy' feeds
 
 ##############################################################################################
 
-# Git稀疏克隆，只克隆指定目录到本地
-function git_sparse_clone() {
-  branch="$1" repourl="$2" && shift 2
-  git clone --depth=1 -b $branch --single-branch --filter=blob:none --sparse $repourl
-  repodir=$(echo $repourl | awk -F '/' '{print $(NF)}')
-  cd $repodir && git sparse-checkout set $@
-  mv -f $@ ../package
-  cd .. && rm -rf $repodir
-}
+
+
 # 添加额外插件 https://github.com/haiibo/OpenWrt/blob/main/diy-script.sh
 # git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
 # git clone --depth=1 -b openwrt-18.06 https://github.com/tty228/luci-app-wechatpush package/luci-app-serverchan
