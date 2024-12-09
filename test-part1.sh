@@ -7,9 +7,11 @@
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 #sed -i '$a src-git helloworld https://github.com/fw876/helloworld.git' ./feeds.conf.default
-echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
-echo 'src-git opentopd  https://github.com/sirpdboy/sirpdboy-package' >>feeds.conf.default
-sed -i '$a src-git openwrtpackages https://github.com/kenzok8/openwrt-packages.git' ./feeds.conf.default
+#echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
+#echo 'src-git opentopd  https://github.com/sirpdboy/sirpdboy-package' >>feeds.conf.default
+#sed -i '$a src-git openwrtpackages https://github.com/kenzok8/openwrt-packages.git' ./feeds.conf.default
+sed -i '$a src-git openwrtpackages https://github.com/sinpxing/openwrt-packages.git' ./feeds.conf.default
+
 
 ### 插件报错修复
 # 翻墙Psswall&SSRP插件防炸上游备份-sbwml / kenzo-small的备用
