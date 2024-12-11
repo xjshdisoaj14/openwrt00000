@@ -11,11 +11,11 @@ env:
   CONFIG_FILE: hao.config
   DIY_P1_SH: hao-part1.sh
   DIY_P2_SH: hao-part2.sh
-  UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
+  UPLOAD_BIN_DIR: true  ###上传 bin 目录。即包含所有 ipk 文件和固件的目录
   UPLOAD_COWTRANSFER: false
   UPLOAD_WETRANSFER: false
-  UPLOAD_RELEASE: true
+  UPLOAD_RELEASE: true  ###是否创建发行版
   TZ: Asia/Shanghai
 
 jobs:
