@@ -21,7 +21,7 @@
 # sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 # kenzok8软件仓库/smpackage 常用OpenWrt软件包源码合集，同步上游更新/openwrt-packages openwrt常用软件包/small ssr passwall homeprxoy及依赖
 sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
-# sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 # sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 # 包含网络速度/定时设置/lucky大吉/一键扩容/网络设置向导
 sed -i '$a src-git siropboy https://github.com/sirpdboy/sirpdboy-package.git' feeds.conf.default
