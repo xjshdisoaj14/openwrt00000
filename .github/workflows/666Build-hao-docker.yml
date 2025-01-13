@@ -1,4 +1,4 @@
-name: Build  OpenWrt HAO
+name: Build  OpenWrt HAO-docker
 
 on:
   repository_dispatch:
