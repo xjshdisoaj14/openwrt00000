@@ -11,7 +11,7 @@ env:
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: test.config
-  DIY_P1_SH: test-part1.old.sh
+  DIY_P1_SH: test-part1.sh
   DIY_P2_SH: hao-part2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
