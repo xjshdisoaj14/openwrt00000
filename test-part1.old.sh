@@ -18,3 +18,7 @@ sed -i '$a src-git openwrtpackages https://github.com/kenzok8/openwrt-packages.g
 
 # homeproxy
 # git clone --depth=1 https://github.com/immortalwrt/homeproxy.git package/homeproxy
+
+#kenzo 库冲突大佬处理2_https://github.com/kenzok8/small-package
+rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,wireless-regdb}
+rm -rf package/feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,wireless-regdb}
